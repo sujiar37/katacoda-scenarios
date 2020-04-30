@@ -30,6 +30,6 @@
   },
   "backend": {
     "imageid": "kubernetes-cluster-running",
-    "port": "7000"
+    "port": "30070"
   }
 }
