@@ -77,3 +77,35 @@ Check the status of deployment and pod status,
 `kubectl get deployments`{{ execute }}
 
 `kubectl get pods -o wide --show-labels`{{ execute }}
+
+Finally expose the deployment via NodePort, so that we could make calls externally via the port *30070* and get the app responses,
+
+```
+cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: ce-predict
+    type: prediction
+  name: ce-predict-svc
+spec:
+  ports:
+  - port: 7000
+    protocol: TCP
+    targetPort: 7000
+    nodePort: 30070
+  selector:
+    name: ce-predict
+    type: prediction
+  type: NodePort
+EOF
+```{{ execute }}
+
+Now, check for the service and endpoint status and make sure those resolved properly,
+
+`kubectl get services`{{ execute }}
+
+`kubectl get ep`{{ execute }}
+
+ALL SET !!! Let's test the APP and wrap it up !!!
