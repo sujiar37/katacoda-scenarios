@@ -14,6 +14,6 @@ Following are the steps we will walkthrough during this demo,
 
 Try execute following command to check the kubernetes node status,
 
-<pre>`echo "kubectl get nodes"`{{execute}}</pre>
+`kubectl get nodes`{{execute}}
 
 YEAH, ALL SET !!! Let's build private registry via next steps !!!
