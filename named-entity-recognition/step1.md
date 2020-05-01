@@ -12,4 +12,8 @@ Following are the steps we will walkthrough during this demo,
 
 **Note**: We don't cover the scenario's for kubeflow pipelines, pushing models into Minio / S3 etc. Instead we manually push everything to private container registry and take it from there.
 
-We have clone the application repository for you and it can accessible via the following location,
+Try execute following command to check the kubernetes node status,
+
+<pre>`echo "kubectl get nodes"`{{execute}}</pre>
+
+YEAH, ALL SET !!! Let's build private registry via next steps !!!
