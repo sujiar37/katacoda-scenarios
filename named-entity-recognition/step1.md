@@ -1,6 +1,6 @@
 We will follow the below architecture with following customization for this demo purpose. 
 
-![ML Deploy](../assets/model_containers.png)
+![ML Deploy](./model_containers.png)
 
 Following are the steps we will walkthrough during this demo,
 
