@@ -16,7 +16,7 @@ Ok, let's build the model image using the file Dockerfile_ML,
 
 verify the newy builded images are available under hosts,
 
-`docker images | grep -i ner`{{ execute }}
+`docker images | grep -i "ner_"`{{ execute }}
 
 Finally push both images to our private registry
 

@@ -57,7 +57,7 @@ spec:
             mountPath: /tmp/model
       containers:
         # Here is the application image in our private registry
-      - image: 127.0.0.1:30075/ner_app
+      - image: 127.0.0.1:30050/ner_app
         name: ce-predict
         envFrom:
         - configMapRef:
@@ -71,3 +71,9 @@ spec:
           emptyDir: {}
 EOF
 ```{{ execute }}
+
+Check the status of deployment and pod status,
+
+`kubectl get deployments`{{ execute }}
+
+`kubectl get pods -o wide --show-labels`{{ execute }}
