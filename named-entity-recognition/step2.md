@@ -56,8 +56,8 @@ Now, check for the service and endpoint status and make sure those resolved prop
 
 `docker pull hello-world`{{ execute }}
 
-`docker tag hello-world 127.0.0.1:35000/hello-world`{{ execute }}
+`docker tag hello-world 127.0.0.1:30050/hello-world`{{ execute }}
 
-`docker push 127.0.0.1:35000/hello-world`{{ execute }}
+`docker push 127.0.0.1:30050/hello-world`{{ execute }}
 
 YEAH !!! ALL SET, now, we are ready to build and push our applicaton and model images
