@@ -38,7 +38,7 @@ spec:
   - port: 5000
     protocol: TCP
     targetPort: 5000
-    nodePort: 35000
+    nodePort: 30050
   selector:
     run: myregistry
   type: NodePort
@@ -48,13 +48,16 @@ EOF
 Now, check for the service and endpoint status and make sure those resolved properly,
 
 `kubectl get services`{{ execute }}
+
 `kubectl get ep`{{ execute }}
 
 3. Let's Test whether private registry is working or not by pushing a custom image to there. For that, we can pull an image from DockerHub, then tag it with our private registry name and finally push it,
 
 
 `docker pull hello-world`{{ execute }}
+
 `docker tag hello-world 127.0.0.1:35000/hello-world`{{ execute }}
+
 `docker push 127.0.0.1:35000/hello-world`{{ execute }}
 
 YEAH !!! ALL SET, now, we are ready to build and push our applicaton and model images
