@@ -2,8 +2,8 @@ We will follow the official docs from Docker documentation to setup the private 
 
 1. Create a Pod named *myregistry* using the image **registry:2**
 
-```shell
-`cat <<EOF | kubectl apply -f -
+```
+cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod
 metadata:
@@ -16,5 +16,5 @@ spec:
     name: myregistry
     resources: {}
   restartPolicy: Never
-EOF`{{ execute }}
-```
+EOF
+```{{ execute }}
