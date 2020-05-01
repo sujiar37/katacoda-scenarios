@@ -23,7 +23,7 @@ Now, check for the pod status and make sure it is in running state,
 
 `kubectl get pods --show-labels -o wide`{{ execute }}
 
-2. Create a service to expose the private registry via NodePort. So that way, we could access directly from all nodes using the nodeport *35000*
+2. Create a service to expose the private registry via NodePort. So that way, we could access directly from all nodes using the nodeport *30050*
 
 ```
 cat <<EOF | kubectl apply -f -
