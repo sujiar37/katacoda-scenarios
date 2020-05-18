@@ -24,4 +24,4 @@ Finally push both images to our private registry
 
 `docker push 127.0.0.1:30050/ner_model`{{ execute }}
 
-Cool !!! Let's go for deploying our applications !!!
+Cool !!! Let's go and deploy our application !!!

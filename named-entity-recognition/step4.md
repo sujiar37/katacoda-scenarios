@@ -20,7 +20,7 @@ data:
   CE_PREDICT_PORT: "7000"
   CE_PREDICT_LOG_PATH: "/app/logs"
   CE_PREDICT_LOG_LEVEL: "INFO"
-  CE_PREDICT_MODEL_PATH: "/model"
+  CE_PREDICT_MODEL_PATH: "/model/"
 EOF
 ```{{ execute }}
 
