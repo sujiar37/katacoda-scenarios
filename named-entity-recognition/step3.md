@@ -4,7 +4,7 @@ We just made the clone to our application repository to the root directory and c
 
 Take a look at both Dokerfile and Dockerfile_ML to understand the steps while building application and model images.
 
-Now, let's build the application image which is written under the Dockerfile. We will follow the image name structure like this: *<private_registry_address:port>/image_name*
+Now, let's build the application image which is written under the Dockerfile. We will follow the image name structure like this: *private_registry_address:port/image_name*
 
 `docker build -t 127.0.0.1:30050/ner_app -f Dockerfile .`{{ execute }}
 
